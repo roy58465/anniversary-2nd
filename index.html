@@ -21,8 +21,35 @@
             font-size: medium;
             font-weight: 600px;
         }
-        .date{
-            color: rgb(223, 209, 212);
+        
+        section{
+            width: 1280px;
+            height: 800px;
+            margin: 0 auto;
+        }
+        
+        .calendar-item{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            column-gap: 20px;
+            row-gap: 20px;
+            border-radius: 8px;
+        }
+        .date, .day{
+            background-color: rgb(161, 174, 179) ;
+            border-radius: 8px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+        .day{
+            background-color: rgb(73, 107, 96);
+            font-size: 1em;
+        } 
+        .special{
+            background-color: red;
         }
     </style>
     
@@ -31,7 +58,7 @@
 <body class="normal">
     <div class="anniversary-card">
         <div class="card-item">
-            <h1>HAPPY 2nd <br>ANNIVERSARY</h1>
+            <h1><b>HAPPY 2nd <br>ANNIVERSARY</b></h1>
             <div class="date">20-01-2025</div>
             <hr>
             <P>**It's easy to fall in love, but staying in love with the same person for the rest of one's life is considerably more difficult. May God provide us the strength to stay committed to one another. Happy Anniversary**</P>
@@ -40,6 +67,61 @@
             <img class="image" src="styles/images/image 1.jpg" alt="">
         </div>
     </div>
+    <section>
+        <h1>Calendar</h1>
+        <hr>
+            <div class="calendar-item">
+                <div class="day">S</div>
+                <div class="day">M</div>
+                <div class="day">T</div>
+                <div class="day">W</div>
+                <div class="day">T</div>
+                <div class="day">F</div>
+                <div class="day">S</div>
+                <div class="date">29</div>
+                <div class="date">30</div>
+                <div class="date">31</div>
+                <div class="date">1</div>
+                <div class="date">2</div>
+                <div class="date">3</div>
+                <div class="date">4</div>
+                <div class="date">5</div>
+                <div class="date">6</div>
+                <div class="date">7</div>
+                <div class="date">8</div>
+                <div class="date">9</div>
+                <div class="date">10</div>
+                <div class="date">11</div>
+                <div class="date">12</div>
+                <div class="date">13</div>
+                <div class="date">14</div>
+                <div class="date">15</div>
+                <div class="date">16</div>
+                <div class="date">17</div>
+                <div class="date">18</div>
+                <div class="date">19</div>
+                <div class="date special">20</div>
+                <div class="date">21</div>
+                <div class="date">22</div>
+                <div class="date">23</div>
+                <div class="date">24</div>
+                <div class="date">25</div>
+                <div class="date">26</div>
+                <div class="date">27</div>
+                <div class="date">28</div>
+                <div class="date">29</div>
+                <div class="date">30</div>
+                <div class="date">31</div>
+                <div class="date">1</div>
+                <div class="date">2</div>
+                <div class="date">3</div>
+                <div class="date">4</div>
+                <div class="date">5</div>
+                <div class="date">6</div>
+                <div class="date">7</div>
+                <div class="date">8</div>
+        </div>
+    </section>
 </body>
 
 </html>
